@@ -1,0 +1,81 @@
+* {
+    /*Resetando as margens Padrões*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    /*Definido a largura*/
+    height: 50px;
+    /*Definido a Altura*/
+    background-color: black;
+    /*Definindo a cor de fundo*/
+    display: flex;
+    /*Deixando elementos lado a lado*/
+    justify-content: space-between;
+    /*Separando os Textos*/
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    /*Definindo a sombra*/
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    text-transform: lowercase;
+    /*Deixando Tudo Minuscula*/
+    letter-spacing: -4px;
+    /*Juntando mais as letras*/
+}
+
+.logo span:first-child {
+    color: #1d52ff;
+}
+
+.logo span:last-child {
+    font-size: 15px;
+    letter-spacing: normal;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li{
+    position: relative;
+}
+
+.menu li a {
+    padding: 17px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li:hover {
+    background: #1d52ff;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #032ebb;
+    min-width: 110%;
+}
